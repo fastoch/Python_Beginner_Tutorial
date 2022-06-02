@@ -17,7 +17,8 @@ A lot of libraries were created and are still being added for Python for all the
 **Python** is more suitable for **backend** web dev, whereas 
 **JavaScript** is the best choice when it comes to **frontend** web development.
 
-When you don't have access to an IDE, you can execute .py files directly from the CLI by typing: *python3 <path_to_your_file>*
+When you don't have access to an IDE, you can execute .py files directly from the CLI by typing: 
+*python3 <path_to_your_file>*
 
 **Data Types**
 Text Type: String (str)
