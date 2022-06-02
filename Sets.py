@@ -29,8 +29,20 @@ user_input = ""
 while user_input != "exit":
     user_input = input("Please enter various numbers of days as a comma-separated list and I will convert them to hours:\n")
     print()
-    print(f"Here is the user's input: {user_input} \n")
-    print(f"Here are my conversions:")
+    
+    print("This is a List:")
+    print(user_input.split(",")) # prints the entire user input
+    for num_of_days_element in user_input.split(","): 
+        validate_user_input()
+    print()
+    
+    print("This is a Set:")
+    print(set(user_input.split(","))) # filters duplicate values
     for num_of_days_element in set(user_input.split(",")): # the set function will filter duplicate values
         validate_user_input()
+    print()
+
+        
     print() # skip a line between two iterations of my program
+    
+# 2:30:00
