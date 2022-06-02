@@ -31,3 +31,11 @@ while user_input != "exit":
     print()
 
 # 2:03:00
+
+# This is a single line comment
+
+"""This 
+is
+a 
+multi-line
+comment"""

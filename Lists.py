@@ -1,5 +1,5 @@
 # https://www.youtube.com/watch?v=t8pPdKYpowI&t=4548s
-# 2:20:00
+# 2:22:00
 
 # creating a list
 my_list = ["January", "February", "March"]
@@ -19,4 +19,4 @@ print(f"This is the first item on my list: {my_list[0]} \n")
 my_list.append("July")
 print(f"This is my appended list: {my_list} \n")
 
-# Lists are mostly used in for loops : for each element of that list, do something
+# Lists are mostly used in for loops : for each element of that list, do such action

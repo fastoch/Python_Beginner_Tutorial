@@ -16,6 +16,7 @@ def days_to_units(num_of_days):
 def validate_user_input():
     try: 
         num_of_days = int(num_of_days_element)
+        # we want to convert only positive integers
         if num_of_days > 0:  
             result = days_to_units(num_of_days)
             print(result)
