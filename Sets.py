@@ -2,7 +2,7 @@
 # 2:27:00
 
 # Sets are another built-in data type of Python (along with Lists)
-# As with Lists, used to store multiple items of data
+# As with Lists, sets are used to store multiple items of data, but they do NOT allow duplicate values
 
 name_of_unit = "hours"
 conversion = 24
@@ -25,11 +25,12 @@ def validate_user_input():
     except ValueError:
         print("Your input is not a valid number of days, don't try to break my program.")
         
-
-# Let's use a set as an input for our previous program
-user_input = "" # variable initialization
+user_input = "" 
 while user_input != "exit":
     user_input = input("Please enter various numbers of days as a comma-separated list and I will convert them to hours:\n")
-    # as user_input is a string, we use the split() function to make it a list
-    for num_of_days_element in user_input.split(","): # we expect a list of comma-separated values 
+    print()
+    print(f"Here is the user's input: {user_input} \n")
+    print(f"Here are my conversions:")
+    for num_of_days_element in set(user_input.split(",")): # the set function will filter duplicate values
         validate_user_input()
+    print() # skip a line between two iterations of my program
