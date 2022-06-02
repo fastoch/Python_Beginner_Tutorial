@@ -4,6 +4,7 @@
 # creating a list
 my_list = ["January", "February", "March"]
 print(f"This is my list: {my_list} \n")
+print(f"This is the first item on my list: {my_list[0]} \n")
 
 # replacing items in a list
 my_list[0] = "April"
@@ -17,3 +18,5 @@ print(f"This is the first item on my list: {my_list[0]} \n")
 # appending a new item to the list
 my_list.append("July")
 print(f"This is my appended list: {my_list} \n")
+
+# Lists are mostly used in for loops : for each element of that list, do something
