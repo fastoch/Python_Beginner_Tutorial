@@ -33,7 +33,7 @@ while user_input != "exit":
     
     print(f"user input type is: {type(list_of_numbers)}")
     print("This is a List:")
-    print(user_input.split(",")) # prints the entire user input
+    print(list_of_numbers) # prints the entire user input
     for num_of_days_element in list_of_numbers: 
         validate_user_input()
     print()
@@ -44,7 +44,6 @@ while user_input != "exit":
     for num_of_days_element in set(list_of_numbers): # the set function will filter duplicate values
         validate_user_input()
     print()
-
         
     print() # skip a line between two iterations of my program
     
