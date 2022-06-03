@@ -28,17 +28,20 @@ def validate_user_input():
 user_input = "" 
 while user_input != "exit":
     user_input = input("Please enter various numbers of days as a comma-separated list and I will convert them to hours:\n")
+    list_of_numbers = user_input.split(",")
     print()
     
+    print(f"user input type is: {type(list_of_numbers)}")
     print("This is a List:")
     print(user_input.split(",")) # prints the entire user input
-    for num_of_days_element in user_input.split(","): 
+    for num_of_days_element in list_of_numbers: 
         validate_user_input()
     print()
     
+    print(f"user input type is: {type(set(list_of_numbers))}")
     print("This is a Set:")
-    print(set(user_input.split(","))) # filters duplicate values
-    for num_of_days_element in set(user_input.split(",")): # the set function will filter duplicate values
+    print(set(list_of_numbers)) # filters duplicate values
+    for num_of_days_element in set(list_of_numbers): # the set function will filter duplicate values
         validate_user_input()
     print()
 
