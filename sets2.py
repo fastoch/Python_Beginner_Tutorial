@@ -25,3 +25,9 @@ print()
 my_set.add("May")
 print(my_set)
 print()
+
+my_set.remove("Jan")
+print(my_set)
+print()
+
+# 2:36:00
