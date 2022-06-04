@@ -8,6 +8,7 @@ input("enter some value:")
 set([1,2,4,2]) # convert a list into a set
 int("2") # convert a string into an integer
 
-"2,3".split() # The split() method splits a string into a list
+"2,3".split(",") # The split() method splits a string into a list
+[1,5,10].count()
 
 # 2:42:00
