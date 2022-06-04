@@ -31,5 +31,6 @@ while user_input != "exit":
     user_input = input("Hey user, enter a number of days and a conversion unit:\n")
     days_and_unit = user_input.split(":") # we wait two inputs separated by a colon => number_of_days:conversion_unit
     print(days_and_unit)
-    {"days":20,"unit":10}
+    days_and_unit_dictionary = {"days":days_and_unit[0], "unit":days_and_unit[1]}
+    
 # 2:47:00
